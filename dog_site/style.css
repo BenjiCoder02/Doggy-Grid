@@ -1,0 +1,187 @@
+.main-head {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+  "nav nav nav name"
+  "sidebar main main main"
+  "sidebar c1 c2 c3"
+  "sidebar c4 c5 c5"
+  "sidebar c6 c6 c6"
+  "sidebar footer footer footer";
+  grid-gap: 0.3rem;
+
+}
+
+#nav {
+  background-color: crimson;
+  grid-area: nav;
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 200px;
+  position: absolute;
+  left: 85%;
+  top: 3%;
+  background: grey;
+  grid-area: name;
+}
+
+main {
+  grid-area: main;
+}
+
+#sidebar {
+  background: blue;
+  grid-area: sidebar;
+}
+
+.c1 {
+  position:relative;
+  text-align: center;
+  color: white;
+  grid-area: c1;
+  filter: grayscale(100%);
+}
+
+.c1:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.t1 > a {
+  text-decoration: none;
+  color: white;
+}
+
+.c1 > .t1 {
+  letter-spacing: 1px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c1 >.t1:hover {
+  letter-spacing: 7px;
+  ;
+  transition:  0.5s;
+}
+
+.c1 > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.c2 {
+  position:relative;
+  text-align: center;
+  color: white;
+  grid-area: c2;
+  filter: grayscale(100%);
+}
+
+.c2:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.t2 > a {
+  text-decoration: none;
+  color: white;
+}
+
+.c2 > .t2 {
+  letter-spacing: 1px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c2 >.t2:hover {
+  letter-spacing: 7px;
+  ;
+  transition:  0.5s;
+}
+
+.c2 > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.c3 {
+  position:relative;
+  text-align: center;
+  color: white;
+  grid-area: c3;
+  filter: grayscale(100%);
+}
+
+.c3:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.t3 > a {
+  text-decoration: none;
+  color: white;
+}
+
+.c3 > .t3 {
+  letter-spacing: 1px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c3 >.t3:hover {
+  letter-spacing: 7px;
+  ;
+  transition:  0.5s;
+}
+
+.c3 > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.c4 {
+  background: lightblue;
+  grid-area: c4;
+}
+
+.c5 {
+  background: teal;
+  grid-area: c5;
+}
+
+.c6 {
+  background: grey;
+  grid-area: c6;
+}
+
+footer {
+  background: red;
+  grid-area: footer;
+}
+
+
+/*
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+*/
